@@ -1,0 +1,108 @@
+/* .carta é o contêiner; as medidas internas usam cqw para escalar com a largura */
+.carta {
+  container-type: inline-size;
+  display: block;
+  aspect-ratio: 4 / 5;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+button.carta {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: var(--papel);
+  border: max(2px, 2.6cqw) solid var(--tinta);
+  border-radius: 11cqw;
+  box-shadow: 0 max(2px, 3.5cqw) 0 var(--tinta);
+  transition:
+    transform 90ms ease-out,
+    box-shadow 90ms ease-out;
+}
+
+.arte {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  flex: none;
+}
+
+.arte img {
+  width: 100%;
+  height: 100%;
+}
+
+.nome {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 0 3cqw;
+  font-size: 12.5cqw;
+  font-weight: 700;
+  line-height: 0.95;
+  text-align: center;
+  color: var(--tinta);
+}
+
+.longo {
+  font-size: 9.6cqw;
+}
+
+/* eliminada: a carta "afunda" na mesa e perde a cor */
+.marcada .face {
+  background: #e4e0ee;
+  box-shadow: 0 0 0 var(--tinta);
+  transform: translateY(max(2px, 3.5cqw));
+}
+
+.marcada .arte img {
+  filter: grayscale(1);
+  opacity: 0.32;
+}
+
+.marcada .nome {
+  color: var(--tinta-suave);
+}
+
+.xis {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  animation: carimbo 160ms ease-out;
+}
+
+.xis path {
+  fill: none;
+  stroke: var(--xis);
+  stroke-width: 15;
+  stroke-linecap: round;
+}
+
+@keyframes carimbo {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.verso {
+  align-items: center;
+  justify-content: center;
+  background: var(--xis);
+  color: #fff;
+  font-size: 70cqw;
+  font-weight: 800;
+  line-height: 1;
+}

@@ -1,0 +1,101 @@
+.tela {
+  background: var(--gema);
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+  align-content: start;
+  gap: 16px;
+  width: min(100%, 980px);
+  margin-inline: auto;
+  padding: 18px 16px 24px;
+}
+
+.tema {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  background: var(--papel);
+  border: var(--borda);
+  border-radius: var(--raio);
+  box-shadow: 0 5px 0 var(--tinta);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 80ms ease-out,
+    box-shadow 80ms ease-out;
+}
+
+.tema:active {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 var(--tinta);
+}
+
+.amostras {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  border-bottom: var(--borda);
+}
+
+.amostras img {
+  width: 64px;
+  height: 64px;
+  border: 3px solid #fff;
+  border-radius: 14px;
+}
+
+.textos {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px 12px;
+}
+
+.nome {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.quantidade {
+  flex: none;
+  font-size: 0.9rem;
+  color: var(--tinta-suave);
+}
+
+/* celular em pé: amostras ao lado do nome, para caber mais temas por tela */
+@media (orientation: portrait) and (max-width: 560px) {
+  .tema {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .amostras {
+    gap: 0;
+    padding: 10px 12px;
+    border-bottom: 0;
+    border-right: var(--borda);
+  }
+
+  .amostras img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .amostras img + img {
+    margin-left: -18px;
+  }
+
+  .textos {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    padding: 8px 14px;
+  }
+}

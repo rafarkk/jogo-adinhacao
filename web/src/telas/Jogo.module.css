@@ -1,0 +1,142 @@
+.jogo {
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--cor-tema);
+}
+
+/*
+  Fora do celular em pé, a grade ocupa toda a área abaixo da barra, sem rolagem.
+  30 cartas: 5x6 em tablet em pé, 10x3 deitado. Telas menos alongadas usam
+  arranjos intermediários para as células ficarem perto da proporção da carta.
+*/
+.grade {
+  --col: 5;
+  --lin: 6;
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--col), minmax(0, 1fr));
+  grid-template-rows: repeat(var(--lin), minmax(0, 1fr));
+  gap: clamp(4px, 1.3vmin, 12px);
+  padding: clamp(6px, 1.8vmin, 16px);
+}
+
+@media (orientation: landscape) {
+  .grade {
+    --col: 6;
+    --lin: 5;
+  }
+}
+
+@media (orientation: landscape) and (min-aspect-ratio: 4/3) {
+  .grade {
+    --col: 8;
+    --lin: 4;
+  }
+}
+
+@media (orientation: landscape) and (min-aspect-ratio: 2/1) {
+  .grade {
+    --col: 10;
+    --lin: 3;
+  }
+}
+
+.celula {
+  container-type: size;
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* maior carta 4:5 que cabe na célula, com folga para a sombra */
+.cartaNaGrade {
+  width: min(100cqw, (100cqh - 5px) * 0.8);
+  margin-bottom: 4px;
+}
+
+/* celular em pé: 3 cartas grandes por linha, e a grade rola */
+@media (orientation: portrait) and (max-width: 599px) {
+  .grade {
+    --col: 3;
+    grid-template-rows: none;
+    grid-auto-rows: max-content;
+    align-content: start;
+    gap: 10px;
+    padding: 12px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .celula {
+    container-type: normal;
+    display: block;
+  }
+
+  .cartaNaGrade {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+}
+
+.minhaCarta {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 14px 0 8px;
+  background: #fff;
+  color: var(--tinta);
+  border: 0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.minhaCarta:active {
+  background: var(--gema-clara);
+}
+
+.minhaCarta:focus-visible {
+  outline-color: #fff;
+}
+
+.icone {
+  width: 22px;
+}
+
+.cartaSorteada {
+  width: min(62vw, 42dvh, 220px);
+  margin-bottom: 8px;
+  animation: revelar 420ms cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+
+@keyframes revelar {
+  from {
+    transform: rotateY(90deg) scale(0.8);
+  }
+}
+
+.sobreCarta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+@media (orientation: landscape) and (max-height: 520px) {
+  .cartaSorteada {
+    width: min(50dvh, 180px);
+  }
+
+  .sobreCarta {
+    flex: 1;
+    min-width: 220px;
+    width: auto;
+    align-self: center;
+  }
+}

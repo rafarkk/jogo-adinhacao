@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dev-dist/
+bin/
+obj/
+.vs/
+*.local
+
+# projeto de referência (QEOB), não faz parte deste jogo
+referencias/

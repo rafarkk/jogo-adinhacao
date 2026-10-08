@@ -1,0 +1,113 @@
+.home {
+  align-items: center;
+  justify-content: center;
+  background: var(--gema);
+}
+
+.miolo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: min(100%, 420px);
+  padding: 24px 20px;
+}
+
+.capa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.leque {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 18px;
+}
+
+.cartaCapa {
+  width: clamp(84px, 27vw, 118px);
+  margin-inline: -8px;
+}
+
+.cartaCapa:nth-child(1) {
+  transform: rotate(-11deg) translateY(10px);
+}
+
+.cartaCapa:nth-child(2) {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-8px);
+}
+
+.cartaCapa:nth-child(3) {
+  transform: rotate(11deg) translateY(10px);
+}
+
+.titulo {
+  font-size: clamp(4rem, 22vw, 6.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+.chamada {
+  max-width: 24ch;
+  margin-top: 6px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.confirmacao {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+/* celular deitado: capa à esquerda, botões à direita */
+@media (orientation: landscape) and (max-height: 520px) {
+  .miolo {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    width: min(100%, 760px);
+    padding: 12px 20px;
+  }
+
+  .capa {
+    flex: 1;
+  }
+
+  .leque {
+    margin-bottom: 8px;
+  }
+
+  .cartaCapa {
+    width: clamp(64px, 17vh, 84px);
+  }
+
+  .titulo {
+    font-size: clamp(3rem, 22vh, 4.5rem);
+  }
+
+  .chamada {
+    font-size: 1rem;
+  }
+
+  .acoes {
+    flex: 1;
+    max-width: 320px;
+    gap: 12px;
+  }
+}

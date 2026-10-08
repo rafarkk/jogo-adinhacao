@@ -1,0 +1,78 @@
+:root {
+  --tinta: #2a1f45;
+  --tinta-suave: #5a4f78;
+  --papel: #ffffff;
+  --gema: #ffc93c;
+  --gema-clara: #ffe08a;
+  --xis: #e63946;
+
+  --fonte: 'Baloo 2 Variable', 'Baloo 2', ui-rounded, 'Segoe UI', system-ui, sans-serif;
+  --borda: 3px solid var(--tinta);
+  --raio: 18px;
+
+  --seguro-topo: env(safe-area-inset-top, 0px);
+  --seguro-base: env(safe-area-inset-bottom, 0px);
+  --seguro-esq: env(safe-area-inset-left, 0px);
+  --seguro-dir: env(safe-area-inset-right, 0px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  font-size: 18px;
+  line-height: 1.35;
+  color: var(--tinta);
+  background: var(--gema);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior: none;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+:focus-visible {
+  outline: 3px solid var(--tinta);
+  outline-offset: 3px;
+}
+
+/* tela cheia que respeita o entalhe e a barra de gestos */
+.tela {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--seguro-topo) var(--seguro-dir) var(--seguro-base) var(--seguro-esq);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

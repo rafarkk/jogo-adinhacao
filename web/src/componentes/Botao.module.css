@@ -1,0 +1,58 @@
+.botao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  padding: 8px 22px;
+  border: var(--borda);
+  border-radius: var(--raio);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 5px 0 var(--tinta);
+  transition:
+    transform 80ms ease-out,
+    box-shadow 80ms ease-out;
+}
+
+.botao:active {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 var(--tinta);
+}
+
+.principal {
+  background: var(--tinta);
+  color: #fff;
+  box-shadow: 0 5px 0 #120b24;
+}
+
+.principal:active {
+  box-shadow: 0 0 0 #120b24;
+}
+
+.claro {
+  background: var(--papel);
+  color: var(--tinta);
+}
+
+.discreto {
+  background: transparent;
+  color: var(--tinta);
+  box-shadow: none;
+}
+
+.discreto:active {
+  transform: none;
+  background: rgb(42 31 69 / 0.1);
+}
+
+.detalhe {
+  margin-top: 2px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.85;
+}

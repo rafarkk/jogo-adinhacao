@@ -1,0 +1,79 @@
+.barra {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 6px 12px 6px 6px;
+  background: var(--tinta);
+  color: #fff;
+}
+
+.voltar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.voltar:active {
+  background: rgb(255 255 255 / 0.15);
+}
+
+.voltar:focus-visible {
+  outline-color: #fff;
+}
+
+.voltar svg {
+  width: 28px;
+  height: 28px;
+}
+
+.voltar path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.textos {
+  flex: 1;
+  min-width: 0;
+}
+
+.titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detalhe {
+  font-size: 0.85rem;
+  line-height: 1.1;
+  opacity: 0.8;
+}
+
+@media (orientation: landscape) and (max-height: 520px) {
+  .barra {
+    min-height: 46px;
+    padding-block: 2px;
+  }
+
+  .voltar {
+    height: 40px;
+  }
+
+  /* título e contador na mesma linha para poupar altura */
+  .textos {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+}
