@@ -18,6 +18,7 @@ import { cartasJogos } from './arte/jogos.mjs'
 import { cartasFilmes } from './arte/filmes.mjs'
 import { cartasCachorros } from './arte/cachorros.mjs'
 import { cartasAnime2 } from './arte/anime2.mjs'
+import { cartasDinossauros } from './arte/dinossauros.mjs'
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const POR_TEMA = 30
@@ -37,6 +38,7 @@ const temas = {
   filmes: cartasFilmes,
   cachorros: cartasCachorros,
   anime2: cartasAnime2,
+  dinossauros: cartasDinossauros,
 }
 
 const iFolha = process.argv.indexOf('--folha')

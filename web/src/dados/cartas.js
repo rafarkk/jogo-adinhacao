@@ -1707,5 +1707,127 @@ export const CARTAS = {
       "id": "yuta",
       "nome": "Yuta"
     }
+  ],
+  "dinossauros": [
+    {
+      "id": "tiranossauro",
+      "nome": "Tiranossauro"
+    },
+    {
+      "id": "triceratops",
+      "nome": "Triceratops"
+    },
+    {
+      "id": "estegossauro",
+      "nome": "Estegossauro"
+    },
+    {
+      "id": "braquiossauro",
+      "nome": "Braquiossauro"
+    },
+    {
+      "id": "velociraptor",
+      "nome": "Velociraptor"
+    },
+    {
+      "id": "pteranodonte",
+      "nome": "Pteranodonte"
+    },
+    {
+      "id": "anquilossauro",
+      "nome": "Anquilossauro"
+    },
+    {
+      "id": "espinossauro",
+      "nome": "Espinossauro"
+    },
+    {
+      "id": "parassaurolofo",
+      "nome": "Parassaurolofo"
+    },
+    {
+      "id": "paquicefalossauro",
+      "nome": "Paquicefalossauro"
+    },
+    {
+      "id": "diplodoco",
+      "nome": "Diplodoco"
+    },
+    {
+      "id": "dilofossauro",
+      "nome": "Dilofossauro"
+    },
+    {
+      "id": "carnotauro",
+      "nome": "Carnotauro"
+    },
+    {
+      "id": "iguanodonte",
+      "nome": "Iguanodonte"
+    },
+    {
+      "id": "compsognato",
+      "nome": "Compsognato"
+    },
+    {
+      "id": "galimimo",
+      "nome": "Galimimo"
+    },
+    {
+      "id": "oviraptor",
+      "nome": "Oviraptor"
+    },
+    {
+      "id": "terizinossauro",
+      "nome": "Terizinossauro"
+    },
+    {
+      "id": "coritossauro",
+      "nome": "Coritossauro"
+    },
+    {
+      "id": "barionix",
+      "nome": "Barionix"
+    },
+    {
+      "id": "arqueopterix",
+      "nome": "Arqueoptérix"
+    },
+    {
+      "id": "protoceratops",
+      "nome": "Protoceratops"
+    },
+    {
+      "id": "estiracossauro",
+      "nome": "Estiracossauro"
+    },
+    {
+      "id": "dimetrodonte",
+      "nome": "Dimetrodonte"
+    },
+    {
+      "id": "amargassauro",
+      "nome": "Amargassauro"
+    },
+    {
+      "id": "quetzalcoatlo",
+      "nome": "Quetzalcoatlo"
+    },
+    {
+      "id": "plesiossauro",
+      "nome": "Plesiossauro"
+    },
+    {
+      "id": "mosassauro",
+      "nome": "Mosassauro"
+    },
+    {
+      "id": "ictiossauro",
+      "nome": "Ictiossauro"
+    },
+    {
+      "id": "alossauro",
+      "nome": "Alossauro"
+    }
   ]
 }

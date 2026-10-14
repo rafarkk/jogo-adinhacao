@@ -6,6 +6,7 @@ export const TEMAS = [
   { id: 'domesticos', nome: 'Animais domésticos', cor: '#F0803C', amostra: ['cachorro', 'galo', 'vaca'] },
   { id: 'pessoas', nome: 'Pessoas aleatórias', cor: '#3D7DE0', amostra: ['carla', 'tiago', 'gabi'] },
   { id: 'gatos', nome: 'Gatos', cor: '#E8588F', amostra: ['frajola', 'tigrao', 'chanel'] },
+  { id: 'dinossauros', nome: 'Dinossauros', cor: '#4E9A45', amostra: ['tiranossauro', 'triceratops', 'estegossauro'] },
   { id: 'cachorros', nome: 'Cachorros', cor: '#B87A3E', amostra: ['stella', 'luna', 'pingo'] },
   { id: 'anime', nome: 'Personagens de anime', cor: '#7C5CE0', amostra: ['gokan', 'marina-lua', 'lufi'] },
   { id: 'anime2', nome: 'Personagens de anime 2', cor: '#C2409A', amostra: ['killua', 'frieren', 'hinata'] },
