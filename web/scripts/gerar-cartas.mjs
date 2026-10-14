@@ -14,6 +14,10 @@ import { cartasBandeiras } from './arte/bandeiras.mjs'
 import { cartasProfissoes } from './arte/profissoes.mjs'
 import { cartasMonstrinhos } from './arte/monstrinhos.mjs'
 import { cartasRobos } from './arte/robos.mjs'
+import { cartasJogos } from './arte/jogos.mjs'
+import { cartasFilmes } from './arte/filmes.mjs'
+import { cartasCachorros } from './arte/cachorros.mjs'
+import { cartasAnime2 } from './arte/anime2.mjs'
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const POR_TEMA = 30
@@ -29,6 +33,10 @@ const temas = {
   profissoes: cartasProfissoes,
   monstrinhos: cartasMonstrinhos,
   robos: cartasRobos,
+  jogos: cartasJogos,
+  filmes: cartasFilmes,
+  cachorros: cartasCachorros,
+  anime2: cartasAnime2,
 }
 
 const iFolha = process.argv.indexOf('--folha')

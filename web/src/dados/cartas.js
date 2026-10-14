@@ -1219,5 +1219,493 @@ export const CARTAS = {
       "id": "robson",
       "nome": "Robson"
     }
+  ],
+  "jogos": [
+    {
+      "id": "minecraft",
+      "nome": "Minecraft"
+    },
+    {
+      "id": "pac-man",
+      "nome": "Pac-Man"
+    },
+    {
+      "id": "tetris",
+      "nome": "Tetris"
+    },
+    {
+      "id": "among-us",
+      "nome": "Among Us"
+    },
+    {
+      "id": "pokemon",
+      "nome": "Pokémon"
+    },
+    {
+      "id": "super-mario",
+      "nome": "Super Mario"
+    },
+    {
+      "id": "sonic",
+      "nome": "Sonic"
+    },
+    {
+      "id": "zelda",
+      "nome": "Zelda"
+    },
+    {
+      "id": "angry-birds",
+      "nome": "Angry Birds"
+    },
+    {
+      "id": "roblox",
+      "nome": "Roblox"
+    },
+    {
+      "id": "fall-guys",
+      "nome": "Fall Guys"
+    },
+    {
+      "id": "flappy-bird",
+      "nome": "Flappy Bird"
+    },
+    {
+      "id": "geometry-dash",
+      "nome": "Geometry Dash"
+    },
+    {
+      "id": "candy-crush",
+      "nome": "Candy Crush"
+    },
+    {
+      "id": "space-invaders",
+      "nome": "Space Invaders"
+    },
+    {
+      "id": "pong",
+      "nome": "Pong"
+    },
+    {
+      "id": "snake",
+      "nome": "Snake"
+    },
+    {
+      "id": "donkey-kong",
+      "nome": "Donkey Kong"
+    },
+    {
+      "id": "the-sims",
+      "nome": "The Sims"
+    },
+    {
+      "id": "portal",
+      "nome": "Portal"
+    },
+    {
+      "id": "plants-vs-zombies",
+      "nome": "Plants vs Zombies"
+    },
+    {
+      "id": "cut-the-rope",
+      "nome": "Cut the Rope"
+    },
+    {
+      "id": "hollow-knight",
+      "nome": "Hollow Knight"
+    },
+    {
+      "id": "undertale",
+      "nome": "Undertale"
+    },
+    {
+      "id": "cuphead",
+      "nome": "Cuphead"
+    },
+    {
+      "id": "kirby",
+      "nome": "Kirby"
+    },
+    {
+      "id": "crash-bandicoot",
+      "nome": "Crash Bandicoot"
+    },
+    {
+      "id": "animal-crossing",
+      "nome": "Animal Crossing"
+    },
+    {
+      "id": "pou",
+      "nome": "Pou"
+    },
+    {
+      "id": "clash-royale",
+      "nome": "Clash Royale"
+    }
+  ],
+  "filmes": [
+    {
+      "id": "titanic",
+      "nome": "Titanic"
+    },
+    {
+      "id": "tubarao",
+      "nome": "Tubarão"
+    },
+    {
+      "id": "o-rei-leao",
+      "nome": "O Rei Leão"
+    },
+    {
+      "id": "procurando-nemo",
+      "nome": "Procurando Nemo"
+    },
+    {
+      "id": "toy-story",
+      "nome": "Toy Story"
+    },
+    {
+      "id": "star-wars",
+      "nome": "Star Wars"
+    },
+    {
+      "id": "harry-potter",
+      "nome": "Harry Potter"
+    },
+    {
+      "id": "jurassic-park",
+      "nome": "Jurassic Park"
+    },
+    {
+      "id": "e-t",
+      "nome": "E.T."
+    },
+    {
+      "id": "up",
+      "nome": "Up"
+    },
+    {
+      "id": "frozen",
+      "nome": "Frozen"
+    },
+    {
+      "id": "shrek",
+      "nome": "Shrek"
+    },
+    {
+      "id": "matrix",
+      "nome": "Matrix"
+    },
+    {
+      "id": "o-magico-de-oz",
+      "nome": "O Mágico de Oz"
+    },
+    {
+      "id": "homem-aranha",
+      "nome": "Homem-Aranha"
+    },
+    {
+      "id": "batman",
+      "nome": "Batman"
+    },
+    {
+      "id": "de-volta-para-o-futuro",
+      "nome": "De Volta para o Futuro"
+    },
+    {
+      "id": "carros",
+      "nome": "Carros"
+    },
+    {
+      "id": "ratatouille",
+      "nome": "Ratatouille"
+    },
+    {
+      "id": "divertida-mente",
+      "nome": "Divertida Mente"
+    },
+    {
+      "id": "piratas-do-caribe",
+      "nome": "Piratas do Caribe"
+    },
+    {
+      "id": "king-kong",
+      "nome": "King Kong"
+    },
+    {
+      "id": "o-senhor-dos-aneis",
+      "nome": "O Senhor dos Anéis"
+    },
+    {
+      "id": "indiana-jones",
+      "nome": "Indiana Jones"
+    },
+    {
+      "id": "wall-e",
+      "nome": "Wall-E"
+    },
+    {
+      "id": "rocky",
+      "nome": "Rocky"
+    },
+    {
+      "id": "viva",
+      "nome": "Viva"
+    },
+    {
+      "id": "a-bela-e-a-fera",
+      "nome": "A Bela e a Fera"
+    },
+    {
+      "id": "aladdin",
+      "nome": "Aladdin"
+    },
+    {
+      "id": "minions",
+      "nome": "Minions"
+    }
+  ],
+  "cachorros": [
+    {
+      "id": "stella",
+      "nome": "Stella"
+    },
+    {
+      "id": "thor",
+      "nome": "Thor"
+    },
+    {
+      "id": "mel",
+      "nome": "Mel"
+    },
+    {
+      "id": "bob",
+      "nome": "Bob"
+    },
+    {
+      "id": "luna",
+      "nome": "Luna"
+    },
+    {
+      "id": "bidu",
+      "nome": "Bidu"
+    },
+    {
+      "id": "pingo",
+      "nome": "Pingo"
+    },
+    {
+      "id": "bolinha",
+      "nome": "Bolinha"
+    },
+    {
+      "id": "fred",
+      "nome": "Fred"
+    },
+    {
+      "id": "nino",
+      "nome": "Nino"
+    },
+    {
+      "id": "lola",
+      "nome": "Lola"
+    },
+    {
+      "id": "kiara",
+      "nome": "Kiara"
+    },
+    {
+      "id": "toby",
+      "nome": "Toby"
+    },
+    {
+      "id": "max",
+      "nome": "Max"
+    },
+    {
+      "id": "zeus",
+      "nome": "Zeus"
+    },
+    {
+      "id": "duke",
+      "nome": "Duke"
+    },
+    {
+      "id": "brutus",
+      "nome": "Brutus"
+    },
+    {
+      "id": "pandora",
+      "nome": "Pandora"
+    },
+    {
+      "id": "amora",
+      "nome": "Amora"
+    },
+    {
+      "id": "neve",
+      "nome": "Neve"
+    },
+    {
+      "id": "bento",
+      "nome": "Bento"
+    },
+    {
+      "id": "cafe",
+      "nome": "Café"
+    },
+    {
+      "id": "hachi",
+      "nome": "Hachi"
+    },
+    {
+      "id": "pacoca",
+      "nome": "Paçoca"
+    },
+    {
+      "id": "barao",
+      "nome": "Barão"
+    },
+    {
+      "id": "fumaca",
+      "nome": "Fumaça"
+    },
+    {
+      "id": "simba",
+      "nome": "Simba"
+    },
+    {
+      "id": "billy",
+      "nome": "Billy"
+    },
+    {
+      "id": "mia",
+      "nome": "Mia"
+    },
+    {
+      "id": "theo",
+      "nome": "Theo"
+    }
+  ],
+  "anime2": [
+    {
+      "id": "killua",
+      "nome": "Killua"
+    },
+    {
+      "id": "gon",
+      "nome": "Gon"
+    },
+    {
+      "id": "alluka",
+      "nome": "Alluka"
+    },
+    {
+      "id": "kira",
+      "nome": "Kira"
+    },
+    {
+      "id": "mikey",
+      "nome": "Mikey"
+    },
+    {
+      "id": "draken",
+      "nome": "Draken"
+    },
+    {
+      "id": "takemichi",
+      "nome": "Takemichi"
+    },
+    {
+      "id": "bachira",
+      "nome": "Bachira"
+    },
+    {
+      "id": "isagi",
+      "nome": "Isagi"
+    },
+    {
+      "id": "kaiser",
+      "nome": "Kaiser"
+    },
+    {
+      "id": "hinata",
+      "nome": "Hinata"
+    },
+    {
+      "id": "kageyama",
+      "nome": "Kageyama"
+    },
+    {
+      "id": "hikaru",
+      "nome": "Hikaru"
+    },
+    {
+      "id": "yoshiki",
+      "nome": "Yoshiki"
+    },
+    {
+      "id": "maomao",
+      "nome": "Maomao"
+    },
+    {
+      "id": "jinshi",
+      "nome": "Jinshi"
+    },
+    {
+      "id": "meliodas",
+      "nome": "Meliodas"
+    },
+    {
+      "id": "asta",
+      "nome": "Asta"
+    },
+    {
+      "id": "coco",
+      "nome": "Coco"
+    },
+    {
+      "id": "qifrey",
+      "nome": "Qifrey"
+    },
+    {
+      "id": "olruggio",
+      "nome": "Olruggio"
+    },
+    {
+      "id": "frieren",
+      "nome": "Frieren"
+    },
+    {
+      "id": "fern",
+      "nome": "Fern"
+    },
+    {
+      "id": "kaneki",
+      "nome": "Kaneki"
+    },
+    {
+      "id": "denji",
+      "nome": "Denji"
+    },
+    {
+      "id": "sakura",
+      "nome": "Sakura"
+    },
+    {
+      "id": "haru",
+      "nome": "Haru"
+    },
+    {
+      "id": "taiki",
+      "nome": "Taiki"
+    },
+    {
+      "id": "chinatsu",
+      "nome": "Chinatsu"
+    },
+    {
+      "id": "yuta",
+      "nome": "Yuta"
+    }
   ]
 }
